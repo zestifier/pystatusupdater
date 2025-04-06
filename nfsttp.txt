@@ -1,0 +1,20 @@
+Hostname: HOSTNAME
+OS: PLATFORM
+Architecture: ARCHITECTURE
+CPU clock speed: CLOCKSPEEDMHz
+Current user: USERNAME
+Local IP: LOCALIPADDRESS
+Public IP: PUBLICIPADDRESS
+Python version: PYTHONVERSION
+System clock: TIME
+
+CPU usage: CPUUSAGE%
+RAM usage: RAMUSAGE% (RAMUSED in use, RAMFREE free, RAMTOTAL total)
+Network upload rate: UPLOADRATE
+Network download rate: DOWNLOADRATE
+
+Currently running PROCESSCOUNT process(es)
+Uptime: UPTIME
+Last power on timestamp: LASTBOOT
+Data transmitted over network: UPLOADBYTES
+Data recieved over network: DOWNLOADBYTES

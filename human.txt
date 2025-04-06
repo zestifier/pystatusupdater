@@ -1,0 +1,19 @@
+My name is HOSTNAME and I am running PLATFORM.
+My CPU architecture is ARCHITECTURE.
+My clock speed is CLOCKSPEEDMHz.
+I am signed in as USERNAME.
+My local IP address is LOCALIPADDRESS and my public IP address is PUBLICIPADDRESS.
+I am running Python version PYTHONVERSION.
+My clock says the time is TIME.
+
+My CPU usage is CPUUSAGE%.
+My RAM usage is RAMUSAGE%.
+I am currently uploading to the network at UPLOADRATE.
+I am currently downloading from the network at DOWNLOADRATE.
+My RAM has RAMUSED in use, RAMFREE free and RAMTOTAL total.
+
+I am currently running PROCESSCOUNT process(es).
+I have been up for UPTIME.
+My last power on was LASTBOOT.
+I have uploaded UPLOADBYTES over the network.
+I have downloaded DOWNLOADBYTES over the network.

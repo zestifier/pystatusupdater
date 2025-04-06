@@ -1,0 +1,6 @@
+PyYAML      
+psutil
+requests
+wmi ; sys_platform == "win32"
+setuptools; sys_platform == "win32"
+GPUtil; sys_platform == "win32"
