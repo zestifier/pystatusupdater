@@ -1,0 +1,52 @@
+general:
+  script: "nfsttp.txt" # path to script to use for the email, default is nfsttp.txt (no filler straight to the point), which has no filler and is straight to the point. human.txt writes like a human would.
+  sharemethod: "email" # valid options are email and discord
+  newstorageinfo: false # use more in-depth storage information grabber.
+  extradirectories: # add any extra directories you want to be searched in here. ONLY WORKS IF newstorageinfo IS SET TO FALSE
+    dir1: 'E:\'
+    dir2: '/home'
+  processlog: false # set to true to also send a list of all running processes with information
+  temperature: false # show temperatures. you need to run the script as admin and also have wmisupport enabled if you're running Windows
+  gpu: false # use GPUtil to grab info about NVIDIA GPUs. requires either Windows or Linux, an NVIDIA GPU and a working copy of nvidia-smi
+  wmisupport: false # set to false if you don't have WMI installed or if you're not running Windows
+
+stats: # show/hide various stats
+  hostname: true # hostname
+  platform: true # operating system info
+  architecture: true # CPU architecture
+  clockspeed: true # CPU clock speed
+  username: true # Username of signed-in user
+  localip: true # Local IP address
+  publicip: false # Public IP address
+  pythonversion: true # Python version
+  time: true # System clock
+  cpuusage: true # CPU usage
+  ramusage: true # RAM usage
+  uploadrate: true # network upload rate
+  downloadrate: true # network download rate
+  ramused: true # amount of RAM being used
+  ramfree: true # amount of RAM free
+  ramtotal: true # total amount of RAM
+  processcount: true # amount of processes running
+  uptime: true # system uptime
+  lastboottime: true # last time the system was booted up
+  uploadbytes: true # amount of bytes uploaded to the network since last boot
+  downloadbytes: true # amount of bytes downloaded from the network since last boot
+
+schedule: # configuration for the scheduler
+  schedule: false # use the schedule. run the script as a daemon and automatically send status updates at a set interval if enabled, otherwise run once and exit
+  interval: 60 # interval between status reports in minutes
+
+email: # only enter these fields if you're using the email share method
+  address: "user@example.com" # address to send from
+  recipient: "admin@example.com" # who to send the email to
+  server: "smtp.example.com" # smtp server
+  ssl: false # whether to use SMTP_SSL or not
+  port: 25 # smtp port
+  password: "" # password for sender email, leave blank if not required
+
+discord: # only enter these fields if you're using the discord share method
+  webhook: "" # webhook url here.
+  messagecolour: "58B9FF" # hex colour for the webhook output, doesn't apply if you're bypassing length limit
+  bypasslengthlimit: true # send output as a .txt file, bypassing the length limit. enable this if the script runs without errors but there is no output on the webhook.
+  filename: "message.txt" # filename for the .txt output. only works if bypasslengthlimit is set to true. file must be writeable, it is written to the directory the script is contained within.
