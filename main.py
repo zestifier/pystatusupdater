@@ -1,4 +1,4 @@
-# lilzestttt, 03/04/2025 and 04/04/2025
+# zestifier, 03/04/2025 and 04/04/2025
 import platform
 import socket
 import ctypes
